@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(to right, #667eea, #764ba2) center center;
   font-family: "Open Sans", sans-serif;
@@ -31,7 +35,7 @@ header h1 {
   margin-top: 5px;
 }
 main {
-  margin-top: 5px;
+  margin: 5px 0 20px 0;
 }
 
 .pokemons {
@@ -55,7 +59,7 @@ main {
   content: "";
   position: absolute;
   padding: 100% 100% 0 0;
-  background: #d3f8d1;
+  background: #9da7b4;
   opacity: 0.5;
   border-radius: 50%;
   z-index: -1;
