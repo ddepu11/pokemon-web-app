@@ -20,17 +20,18 @@ async function getAllPokemons() {
 // Get One pokemon details
 function getOnePokemonAtATime(pokemons) {
   const colors = [
-    { f: "#e6e6ea", s: "#f4b6c2" },
-    { f: "#b3cde0", s: "#651e3e" },
-    { f: "#dec3c3", s: "#fe8a71" },
-    { f: "#4b86b4", s: "#f9caa7" },
-    { f: "#54b2a9", s: "#ee4035" },
+    { f: "#add6ff ", s: "#e4dcf1" },
+    { f: "#8dbdff", s: "#bfd6f6" },
+
+    { f: "#89f7fe ", s: "#66a6ff" },
+    { f: "#48c6ef", s: "#6f86d6" },
+    { f: "#feada6", s: "#f5efef" },
     { f: "#d0e1f9", s: "#aaaaaa" },
-    { f: "#fce9db", s: "#96ceb4" },
+    { f: " #e4efe9", s: "#93a5cf" },
 
     { f: "#708090", s: " #fff4e6" },
 
-    { f: "#8b9dc3", s: "#3b5998 " },
+    { f: "#50A7C2", s: "#B7F8DB" },
 
     { f: "#3385c6", s: "#ffd3b6" },
   ];
