@@ -9,8 +9,106 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #709fb0, #a7c5eb) no-repeat center
-    center;
+  background: linear-gradient(to left, #c69bce, #ccb4b4) center center;
   height: 100vh;
   font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+header h1 {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 5px;
+}
+main {
+  margin-top: 5px;
+}
+
+.pokemons {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+  grid-auto-rows: auto;
+}
+
+.pokemon {
+  flex-direction: column;
+  z-index: 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.avatar::before {
+  content: "";
+  position: absolute;
+  padding: 100% 100% 0 0;
+  background: #d3f8d1;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.info {
+  flex-direction: column;
+}
+.info h3 {
+  margin: 8px 0px 5px 0px;
+}
+.info h4 {
+  font-size: 1.3em;
+  margin: 2px 0px;
+}
+
+.type span {
+  font-size: 0.82em;
+  font-weight: bold;
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  box-shadow: 0px 0.1rem 0.11rem rgba(3, 8, 20, 0.1),
+    rgba(2, 8, 20, 0.1) 0px 0rem 0.12rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  transition: all 500ms;
+  overflow: hidden;
+  background: linear-gradient(to left, #d1d1b8, #f58093);
+  padding: 20px 0;
+}
+.card:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0 0.35em 1.195em,
+    rgba(2, 8, 20, 0.1) 0px 0.175rem 0.5rem;
+  transform: translateY(-3px) scale(1.1);
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+  main {
+    margin-top: 0px;
+  }
+  .pokemons {
+    gap: 15px;
+  }
 }
