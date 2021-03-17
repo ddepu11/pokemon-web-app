@@ -105,8 +105,12 @@ main {
 }
 
 @media (max-width: 400px) {
+  .container {
+    padding: 5px 40px;
+  }
   header h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
+    margin-bottom: 5px;
   }
   main {
     margin-top: 0px;
