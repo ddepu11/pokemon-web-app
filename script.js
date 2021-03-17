@@ -50,7 +50,7 @@ function showDataInDOM(data, index, randomColor) {
   div.classList.add("flex");
 
   const { f, s } = randomColor;
-  console.log(f, s);
+  // console.log(f, s);
   //
   div.style.background = `linear-gradient(to right, ${f}, ${s})`;
 
